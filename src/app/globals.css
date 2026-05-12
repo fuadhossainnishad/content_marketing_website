@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'DM Sans', sans-serif;
+  --font-syne: 'Syne', sans-serif;
+  --mint: #7FFFD4;
+  --charcoal: #0A0A0A;
+  --offwhite: #F2F1EF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--offwhite);
+  color: var(--charcoal);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--mint);
+  color: var(--charcoal);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--offwhite); }
+::-webkit-scrollbar-thumb { background: var(--charcoal); border-radius: 2px; }
+
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
