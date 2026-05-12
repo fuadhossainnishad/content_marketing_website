@@ -1,7 +1,3 @@
-Here’s a **production-grade README.md** written in a senior staff engineer style — clean, structured, and deployment-ready.
-
----
-
 ````md
 # 🚀 Rise at Seven – Next.js Web Experience
 
@@ -202,7 +198,5 @@ Private / Internal Project (Update if open-source)
 ## 👨‍💻 Author
 
 Built with precision engineering principles using Next.js + modern frontend architecture.
-
-```
 
 ```
